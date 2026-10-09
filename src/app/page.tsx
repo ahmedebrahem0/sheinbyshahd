@@ -3,6 +3,9 @@ import { FaFacebookF, FaInstagram, FaTiktok, FaWhatsapp } from "react-icons/fa";
 import { HiArrowRight } from "react-icons/hi";
 import { PiHandbagLight } from "react-icons/pi";
 
+const artworkSrc = "/Shein by Shahd_ Pink Shopping Guide.png";
+const artworkSizes = "(max-width: 941px) 100vw, 941px";
+
 const socialLinks = [
   { name: "واتساب", label: "اطلبي من واتساب", detail: "للطلب والاستفسار", href: "https://chat.whatsapp.com/H0UG2MugK9lI2dABAPHxP9?s=cl&p=a&mlu=4&ilr=4&iam=0", className: "whatsapp", icon: FaWhatsapp },
   { name: "فيسبوك", label: "تابعيني على فيسبوك", href: "https://facebook.com/share/1XNuweiM4d", className: "facebook", icon: FaFacebookF },
@@ -15,9 +18,12 @@ export default function Home() {
   return (
     <main className="page-shell">
       <section className="artwork" aria-label="روابط Shein by Shahd">
-        <Image src="/bg-size.png" alt="Shein by Shahd — منتجات الموضة والجمال والاختيارات المتاحة" fill preload quality={90} sizes="(max-width: 941px) 100vw, 941px" className="artwork-image" />
-        <div className="mobile-art mobile-art-top" aria-hidden="true" />
+        <Image src={artworkSrc} alt="Shein by Shahd — منتجات الموضة والجمال والاختيارات المتاحة" fill preload quality={90} sizes={artworkSizes} className="artwork-image" />
+        <div className="mobile-art mobile-art-top">
+          <Image src={artworkSrc} alt="Shein by Shahd — كل اللي محتاجاه من شي إن هتلاقيه هنا، اختاري اللي بتحبيه" width={941} height={1670} quality={90} sizes={artworkSizes} className="mobile-slice-image" />
+        </div>
         <div className="interactive-area">
+          <Image src={artworkSrc} alt="" aria-hidden="true" width={941} height={1670} quality={90} sizes={artworkSizes} className="mobile-center-image" />
           {/* <h1 className="choose-heading">✨ اختاري اللي بتحبيه</h1> */}
           <nav className="social-links" aria-label="روابط التواصل والتسوق">
             {socialLinks.map(({ name, label, detail, href, className, icon: Icon }) => (
@@ -32,7 +38,9 @@ export default function Home() {
             ))}
           </nav>
         </div>
-        <div className="mobile-art mobile-art-bottom" aria-hidden="true" />
+        <div className="mobile-art mobile-art-bottom">
+          <Image src={artworkSrc} alt="منتجات لبس وشنط وشوزات وميكب وأطفال وإكسسوارات من اختيارات شهد" width={941} height={1670} quality={90} sizes={artworkSizes} className="mobile-slice-image" />
+        </div>
       </section>
     </main>
   );
