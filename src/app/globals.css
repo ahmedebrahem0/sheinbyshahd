@@ -30,8 +30,8 @@ body { margin: 0; min-width: 280px; }
 .social-detail { font-size: clamp(11px, 2.1vw, 22px); font-weight: 400; line-height: 1.35; }
 .social-arrow { justify-self: center; width: clamp(22px, 4.2vw, 42px); height: auto; stroke-width: .7; }
 @media (max-width: 600px) {
-  .artwork { aspect-ratio: auto; display: flex; flex-direction: column; background: url('/bg.png') center top / 100% 100% no-repeat; }
-  .artwork-image { display: none; }
+  .artwork { aspect-ratio: auto; display: flex; flex-direction: column; background: #fff0f4; }
+  .artwork-image { object-fit: fill; }
   .mobile-art { display: block; flex: none; width: 100%; }
   .mobile-art-top { height: calc(100vw * 540 / 941); }
   .mobile-art-bottom { height: calc(100vw * 490 / 941); }

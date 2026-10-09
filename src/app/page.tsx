@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <main className="page-shell">
       <section className="artwork" aria-label="روابط Shein by Shahd">
-        <Image src="/bg.png" alt="Shein by Shahd — منتجات الموضة والجمال والاختيارات المتاحة" fill priority sizes="(max-width: 941px) 100vw, 941px" className="artwork-image" />
+        <Image src="/bg-size.png" alt="Shein by Shahd — منتجات الموضة والجمال والاختيارات المتاحة" fill preload quality={90} sizes="(max-width: 941px) 100vw, 941px" className="artwork-image" />
         <div className="mobile-art mobile-art-top" aria-hidden="true" />
         <div className="interactive-area">
           {/* <h1 className="choose-heading">✨ اختاري اللي بتحبيه</h1> */}
