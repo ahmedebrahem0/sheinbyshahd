@@ -1,11 +1,11 @@
 @import "tailwindcss";
 
-:root { color-scheme: light; background: #fff0f4; color: #111; font-family: Tahoma, "Segoe UI", Arial, sans-serif; }
+:root { color-scheme: light; background: #fff0f4; color: #111; font-family: "Alexandria Variable", Tahoma, "Segoe UI", Arial, sans-serif; }
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 body { margin: 0; min-width: 280px; }
-.page-shell { min-height: 100vh; display: flex; justify-content: center; background: #fff0f4; }
-.artwork { position: relative; width: min(100%, 942px); aspect-ratio: 942 / 1670; isolation: isolate; overflow: hidden; }
+.page-shell { min-height: 100vh; display: flex; justify-content: center; align-items: flex-start; background: #fff0f4; }
+.artwork { position: relative; width: min(100%, 941px); aspect-ratio: 941 / 1672; isolation: isolate; overflow: hidden; }
 .artwork-image { object-fit: contain; z-index: -1; }
 .mobile-art { display: none; }
 .interactive-area { position: absolute; inset: 0; }
@@ -26,16 +26,16 @@ body { margin: 0; min-width: 280px; }
 .tiktok .social-icon { filter: drop-shadow(-2px -1px #24f3ec) drop-shadow(2px 1px #ff2f68); }
 .shein .social-icon { color: #d82b70; }
 .social-copy { display: flex; flex-direction: column; align-items: center; justify-content: center; white-space: nowrap; text-align: center; }
-.social-label { font-size: clamp(15px, 3.35vw, 34px); font-weight: 800; line-height: 1.2; }
-.social-detail { font-size: clamp(11px, 2.1vw, 22px); font-weight: 500; line-height: 1.35; }
+.social-label { font-size: clamp(15px, 3.35vw, 34px); font-weight: 700; line-height: 1.35; }
+.social-detail { font-size: clamp(11px, 2.1vw, 22px); font-weight: 400; line-height: 1.35; }
 .social-arrow { justify-self: center; width: clamp(22px, 4.2vw, 42px); height: auto; stroke-width: .7; }
 @media (max-width: 600px) {
-  .artwork { aspect-ratio: auto; display: flex; flex-direction: column; background: #fff0f3; }
+  .artwork { aspect-ratio: auto; display: flex; flex-direction: column; background: url('/bg.png') center top / 100% 100% no-repeat; }
   .artwork-image { display: none; }
-  .mobile-art { display: block; flex: none; width: 100%; background-image: url('/shein.png'); background-repeat: no-repeat; background-size: 100% auto; }
-  .mobile-art-top { height: calc(100vw * 540 / 942); background-position: top center; }
-  .mobile-art-bottom { height: calc(100vw * 490 / 942); background-position: bottom center; }
-  .interactive-area { position: relative; inset: auto; flex: none; padding: 3px 0 18px; background: radial-gradient(ellipse at 50% 50%, #fffafb 0%, #fff3f5 75%, #ffedf1 100%); }
+  .mobile-art { display: block; flex: none; width: 100%; }
+  .mobile-art-top { height: calc(100vw * 540 / 941); }
+  .mobile-art-bottom { height: calc(100vw * 490 / 941); }
+  .interactive-area { position: relative; inset: auto; flex: none; padding: 3px 0 18px; background: transparent; }
   .choose-heading { position: static; width: 100%; margin: 0 0 12px; font-size: clamp(18px, 5vw, 26px); }
   .social-links { position: static; width: min(78%, 370px); height: auto; margin: auto; gap: 9px; }
   .social-link { height: 50px; min-height: 50px; }

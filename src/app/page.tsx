@@ -8,14 +8,14 @@ const socialLinks = [
   { name: "فيسبوك", label: "تابعيني على فيسبوك", href: "https://facebook.com/share/1XNuweiM4d", className: "facebook", icon: FaFacebookF },
   { name: "إنستجرام", label: "تابعيني على إنستجرام", href: "https://instagram.com/shein_by_shahd6?mdxt=MW9sMmtyNm9jaWd0ZA==", className: "instagram", icon: FaInstagram },
   { name: "تيك توك", label: "تابعيني على تيك توك", href: "https://tiktok.com/@sheinbyshahd6", className: "tiktok", icon: FaTiktok },
-  { name: "شي إن", label: "تصفحي منتجات شي إن", href: "https://ar.shein.com", className: "shein", icon: PiHandbagLight },
+  { name: "شي إن", label: "Shop Shein Products", href: "https://ar.shein.com", className: "shein", icon: PiHandbagLight },
 ];
 
 export default function Home() {
   return (
     <main className="page-shell">
       <section className="artwork" aria-label="روابط Shein by Shahd">
-        <Image src="/shein.png" alt="Shein by Shahd — منتجات الموضة والجمال والاختيارات المتاحة" fill priority sizes="(max-width: 942px) 100vw, 942px" className="artwork-image" />
+        <Image src="/bg.png" alt="Shein by Shahd — منتجات الموضة والجمال والاختيارات المتاحة" fill priority sizes="(max-width: 941px) 100vw, 941px" className="artwork-image" />
         <div className="mobile-art mobile-art-top" aria-hidden="true" />
         <div className="interactive-area">
           {/* <h1 className="choose-heading">✨ اختاري اللي بتحبيه</h1> */}
