@@ -3,7 +3,7 @@ import { FaFacebookF, FaInstagram, FaTiktok, FaWhatsapp } from "react-icons/fa";
 import { HiArrowRight } from "react-icons/hi";
 import { PiHandbagLight } from "react-icons/pi";
 
-const artworkSrc = "/final.png";
+const artworkSrc = "/final-cover.png";
 const artworkSizes = "(max-width: 942px) 100vw, 942px";
 
 const socialLinks = [
